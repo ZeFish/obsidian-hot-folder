@@ -1,0 +1,172 @@
+/* Hot Folder Plugin - Core Plugin Style */
+
+/* Settings container */
+.hot-folder-settings {
+    max-width: none;
+    padding: 0;
+}
+
+/* Setting item styling */
+.hot-folder-rule-setting {
+    border-bottom: 1px solid var(--background-modifier-border);
+}
+
+.hot-folder-rule-setting:last-child {
+    border-bottom: none;
+}
+
+.hot-folder-rule-setting .setting-item-info {
+    min-height: auto;
+}
+
+.hot-folder-rule-setting .setting-item-control {
+    align-items: flex-start;
+    padding-top: var(--size-2-2);
+}
+
+/* Rule header */
+.hot-folder-rule-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 8px;
+}
+
+.hot-folder-folder-badge {
+    background: var(--interactive-accent);
+    color: var(--text-on-accent);
+    padding: 2px 8px;
+    border-radius: 3px;
+    font-family: var(--font-monospace);
+    font-size: 12px;
+    font-weight: var(--font-semibold);
+}
+
+/* Fields display */
+.hot-folder-fields-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 8px;
+    margin: 8px 0;
+    padding: 8px 0;
+}
+
+.hot-folder-field-item {
+    background: var(--background-primary-alt);
+    border: 1px solid var(--background-modifier-border);
+    border-radius: 4px;
+    padding: 8px 10px;
+    font-size: 12px;
+}
+
+.hot-folder-field-key {
+    font-weight: 500;
+    color: var(--text-accent);
+    margin-bottom: 2px;
+}
+
+.hot-folder-field-value {
+    color: var(--text-muted);
+    font-family: var(--font-monospace);
+    word-break: break-word;
+}
+
+/* Modal styling - clean layout that matches core Obsidian */
+.modal .setting-item {
+    border-top: none;
+    padding: var(--size-4-3) 0;
+}
+
+.modal .setting-item:first-of-type {
+    padding-top: var(--size-2-3);
+}
+
+.modal .setting-item:last-of-type {
+    padding-bottom: var(--size-2-3);
+}
+
+.modal .setting-item.setting-item-heading {
+    margin-top: var(--size-4-4);
+    margin-bottom: var(--size-2-3);
+    padding-bottom: var(--size-2-2);
+    border-bottom: 1px solid var(--background-modifier-border);
+}
+
+.modal .setting-item.setting-item-heading:first-of-type {
+    margin-top: var(--size-2-3);
+}
+
+/* Key-value field styling */
+.modal .setting-item-control {
+    display: flex;
+    gap: var(--size-2-3);
+    align-items: center;
+    min-height: 36px;
+}
+
+.modal .setting-item-control input[type="text"] {
+    flex: 1;
+    min-width: 100px;
+    height: 32px;
+}
+
+.modal .setting-item-control input[type="text"]:first-of-type {
+    max-width: 140px;
+    flex: 0 0 140px;
+}
+
+.modal .setting-item-control button {
+    flex-shrink: 0;
+    height: 32px;
+}
+
+/* Settings page specific */
+.hot-folder-settings .setting-item-control {
+    align-items: flex-start;
+    padding-top: var(--size-2-2);
+}
+
+/* Empty state */
+.hot-folder-empty-state {
+    text-align: center;
+    padding: var(--size-4-6) var(--size-4-4);
+    color: var(--text-muted);
+    background: var(--background-secondary);
+    border-radius: 6px;
+    margin: var(--size-4-4) 0;
+}
+
+.hot-folder-empty-state .setting-item-description {
+    margin-top: var(--size-2-2);
+}
+
+/* Utility classes */
+.hot-folder-text-small {
+    font-size: var(--font-ui-small);
+}
+
+.hot-folder-text-muted {
+    color: var(--text-muted);
+}
+
+.hot-folder-mono {
+    font-family: var(--font-monospace);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hot-folder-fields-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hot-folder-kv-row {
+        flex-direction: column;
+        align-items: stretch;
+        gap: var(--size-2-2);
+    }
+
+    .hot-folder-type-toggle {
+        align-self: flex-start;
+        min-width: auto;
+    }
+}
