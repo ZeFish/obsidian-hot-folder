@@ -1,10 +1,10 @@
 {
   "id": "hot-folder",
   "name": "Hot Folder",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "minAppVersion": "0.15.0",
   "description": "Automatically add frontmatter to notes based on their folder location. Configure rules to apply tags, categories, and other metadata when notes are created or moved into matching folders.",
-  "author": "You",
-  "authorUrl": "",
+  "author": "Francis",
+  "authorUrl": "https://github.com/ZeFish/",
   "isDesktopOnly": false
 }
